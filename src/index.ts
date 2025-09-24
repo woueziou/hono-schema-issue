@@ -11,7 +11,7 @@ const app = new Hono()
 
 const querySchema = z.object({
     name: z.string().optional(),
-}).meta({ ref: "QueryParams",title: "Query Parameters" ,id: "QueryParams"});
+}).meta({ ref: "QueryParams", title: "Query Parameters", id: "QueryParams" });
 const responseSchema = z.object({
     message: z.string(),
 }).meta({ ref: "Response", title: "Response Body", id: "ResponseSchema" });
